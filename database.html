@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Database - MatsuriGuide</title>
+<meta name="description" content="Browse and filter 35+ Japanese festivals by category, season, and region. Find dates, travel tips, and insider knowledge for every matsuri.">
+<meta property="og:title" content="MatsuriGuide - Festival Database">
+<meta property="og:description" content="Browse and filter 35+ Japanese festivals by category, season, region, and month. Plan your perfect matsuri experience.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humancronadmin.github.io/matsuri-guide/database.html">
+<link rel="canonical" href="https://humancronadmin.github.io/matsuri-guide/database.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-brand">Matsuri<span>Guide</span></a>
+  <div class="nav-links">
+    <a href="database.html" class="active">Database</a>
+    <a href="index.html#guides">Guides</a>
+    <a href="index.html#about">About</a>
+  </div>
+</nav>
+<div class="db-header">
+  <h1>Festival Database</h1>
+  <p>Every matsuri has a story. Find yours.</p>
+</div>
+<div class="filters">
+  <input type="search" id="search" placeholder="Search festival name...">
+  <select id="category"><option value="">All Categories</option></select>
+  <select id="season"><option value="">All Seasons</option></select>
+  <select id="region"><option value="">All Regions</option></select>
+  <select id="sort">
+    <option value="">Sort by...</option>
+    <option value="month">Month (Chronological)</option>
+    <option value="name">Name A-Z</option>
+  </select>
+</div>
+<div class="result-count" id="resultCount"></div>
+<div class="product-grid" id="grid"></div>
+<footer class="footer">
+  <p>MatsuriGuide is an open-source project. <a href="https://github.com/humancronadmin">GitHub</a></p>
+</footer>
+<script src="js/database.js"></script>
+</body>
+</html>
